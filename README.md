@@ -9,6 +9,6 @@ Specify the camera intrinsic and open the model.
 
 ### 2. Run the simulation
 
-### 3. Run `VideoSaving.m`
+### 3. Run `VideoSaving.m` and/or `ImagesSaving.m'
 
 ### 4. Run `GroundTruthSaving.m`
