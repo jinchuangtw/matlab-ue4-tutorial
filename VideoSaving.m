@@ -1,8 +1,11 @@
-filename_left = 'UE_Simu_left.avi';
-filename_right = 'UE_Simu_right.avi';
+main_folder = 'Videos/Small_UE_A';
 
-video_left = VideoWriter(filename_left);
-video_right = VideoWriter(filename_right);
+if ~exist(main_folder, 'dir')
+    mkdir(main_folder);
+end
+
+video_left = VideoWriter(fullfile(main_folder, 'left'), 'MPEG-4');
+video_right = VideoWriter(fullfile(main_folder, 'right'), 'MPEG-4');
 
 open(video_left)
 for i = 1:size(vout_left, 4)
